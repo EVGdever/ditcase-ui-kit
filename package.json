@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
+  "homepage": "https://evgdever.github.io/ditcase-ui-kit/",
   "scripts": {
-    "pub": "webpack && npm version patch && npm publish",
+    "pub": "webpack && deploy && npm version patch && npm publish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d storybook-static",
     "predeploy": "npm run build-storybook"
   },
   "keywords": [],
