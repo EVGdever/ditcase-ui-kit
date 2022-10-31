@@ -1,11 +1,11 @@
 {
   "name": "ditcase-ui-kit",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "./dist/index.js",
   "homepage": "https://evgdever.github.io/ditcase-ui-kit/",
   "scripts": {
-    "pub": "webpack && deploy && npm version patch && npm publish",
+    "pub": " npm run deploy && webpack && npm publish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy": "gh-pages -d storybook-static",
@@ -40,6 +40,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {}
+  ]
 }
