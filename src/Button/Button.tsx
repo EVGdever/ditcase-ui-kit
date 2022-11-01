@@ -4,8 +4,6 @@ import { BaseComponent } from '../BaseComponent'
 
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement>{
 	title: string
-	onClick: () => void
-
 	theme?: 'default' | 'dark'
 	color?: string
 	bgColor?: string
@@ -16,7 +14,6 @@ export const Button: FC<ButtonProps> = ({
 	color,
 	title,
 	bgColor,
-	onClick,
 	...props
 }) => {
 	return (
@@ -40,6 +37,7 @@ const StyledButton = styled.button<StyledButtonProps>(({
 }) => ({
 	backgroundColor: bgColor ?? theme.colors.greenbright,
 	color: color ?? theme.colors.mainwhite,
+	cursor: 'pointer',
 	fontWeight: 'bold',
 	padding: '10px 24px',
 	borderRadius: 8,

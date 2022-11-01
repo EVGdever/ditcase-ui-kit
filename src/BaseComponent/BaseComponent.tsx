@@ -10,7 +10,7 @@ interface StyledThemeProviderProps {
 
 export function BaseComponent({ theme, children }: StyledThemeProviderProps): JSX.Element {
 	let selectedTheme
-	console.log(theme)
+
 	switch (theme) {
 		case 'dark':
 			selectedTheme = darkTheme
@@ -18,9 +18,6 @@ export function BaseComponent({ theme, children }: StyledThemeProviderProps): JS
 		default:
 			selectedTheme = defaultTheme
 	}
-
-	console.log(selectedTheme)
-	console.log(darkTheme)
 
 	return <ThemeProvider theme={selectedTheme}>{children}</ThemeProvider>
 }

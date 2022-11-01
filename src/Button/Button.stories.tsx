@@ -12,12 +12,14 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-	title: 'Button'
+	title: 'Button',
+	onClick: () => console.log('click!')
 }
 
 export const Primary = Template.bind({})
 Primary.args = {
 	color: 'white',
 	title: 'Button',
-	bgColor: 'blue'
+	bgColor: 'blue',
+	onClick: () => console.log('click!')
 }
