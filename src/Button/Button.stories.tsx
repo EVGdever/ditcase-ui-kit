@@ -10,14 +10,14 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
-export const RedButton = Template.bind({})
-RedButton.args = {
-	color: 'red',
+export const Default = Template.bind({})
+Default.args = {
 	title: 'Button'
 }
 
-export const GreenButton = Template.bind({})
-GreenButton.args = {
-	color: 'green',
-	title: 'Button'
+export const Primary = Template.bind({})
+Primary.args = {
+	color: 'white',
+	title: 'Button',
+	bgColor: 'blue'
 }

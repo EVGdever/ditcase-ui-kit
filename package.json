@@ -1,6 +1,6 @@
 {
   "name": "ditcase-ui-kit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "./dist/index.js",
   "homepage": "https://evgdever.github.io/ditcase-ui-kit/",
@@ -25,10 +25,12 @@
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "0.0.13",
     "@types/react": "^18.0.24",
+    "@types/styled-components": "^5.1.26",
     "babel-loader": "^8.2.5",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6",
     "ts-loader": "^9.4.1",
     "typescript": "^4.8.4",
     "webpack": "^5.74.0",
@@ -40,5 +42,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "resolutions": {
+    "styled-components": "^5"
+  }
 }
